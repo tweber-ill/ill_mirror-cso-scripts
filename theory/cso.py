@@ -87,13 +87,11 @@ for q in np.linspace(0, 1, num_Q_points):
 	except la.LinAlgError:
 		pass
 
+print("Plotting...")
 plt.plot()
 plt.xlabel("q (rlu)")
 plt.ylabel("E (meV)")
 plt.scatter(qs, Es, marker = '.', s = ws, label = "CSO")
-
-
-print("Plotting...")
 plt.legend(loc = "upper right")
 plt.tight_layout()
 plt.show()
